@@ -38,10 +38,10 @@ export default function Main() {
               <Profile></Profile>
             </div>
             <div className="content-main">
-              <Projects></Projects>
+              <TechStacks></TechStacks>
             </div>
             <div className="content-main">
-              <TechStacks></TechStacks>
+              <Projects></Projects>
             </div>
           </div>
         </div>

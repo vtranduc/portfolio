@@ -11,7 +11,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import IconButton from "@material-ui/core/IconButton";
 import Collapse from "@material-ui/core/Collapse";
 import clsx from "clsx";
-// import Hello from "../../../../public/main/"
+import "./index.css";
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function Profile({ contentWidthPx }) {
+export default function Profile() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -46,7 +46,7 @@ export default function Profile({ contentWidthPx }) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/main/profile-pic.jpg"
+          image="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/profile-pic.jpg"
           title="profile-image"
         />
         <CardContent>
@@ -62,7 +62,7 @@ export default function Profile({ contentWidthPx }) {
             developer! I have built several web applications using variety of
             tech stacks. I am also equipped with strong mathematical and
             engineering background, which allows to excel in advanced web
-            applications, such as building custom game engine, or mathematical
+            applications, such as building custom game engine and mathematical
             modeling etc. My passion in computing science has earned me Master's
             degree in Chemical Engineering, and my years of experience in coding
             and learning technologies allow me to work effectively both
@@ -71,23 +71,34 @@ export default function Profile({ contentWidthPx }) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-        {/* ---------------------------------------------------------------------------- */}
-        <IconButton
-          className={clsx(classes.expand, {
-            [classes.expandOpen]: expanded
-          })}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </IconButton>
+        <div id="profile-action">
+          <div>
+            <Button size="small" color="primary">
+              Share
+            </Button>
+            <Button size="small" color="primary">
+              Learn More
+            </Button>
+          </div>
+          {/* ---------------------------------------------------------------------------- */}
+          <div id="expand-btn">
+            <div id="resume-txt">
+              <Typography variant="body2" color="textSecondary" component="p">
+                Resume
+              </Typography>
+            </div>
+            <IconButton
+              className={clsx(classes.expand, {
+                [classes.expandOpen]: expanded
+              })}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="show more"
+            >
+              <ExpandMoreIcon />
+            </IconButton>
+          </div>
+        </div>
         {/* ---------------------------------------------------------------------------- */}
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
