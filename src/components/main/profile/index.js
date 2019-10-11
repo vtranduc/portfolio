@@ -74,7 +74,7 @@ export default function Profile() {
         <div id="profile-action">
           <div>
             <Button size="small" color="primary">
-              Share
+              Email Me!
             </Button>
             <Button size="small" color="primary">
               Learn More
@@ -103,6 +103,8 @@ export default function Profile() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
+          {/* <embed src="./resume.pdf"></embed> */}
+          <img src=""></img>
           <Typography paragraph>Method:</Typography>
           <Typography paragraph>
             Heat 1/2 cup of the broth in a pot until simmering, add saffron and
