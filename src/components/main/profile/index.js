@@ -104,8 +104,18 @@ export default function Profile() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           {/* <embed src="./resume.pdf"></embed> */}
-          <img src=""></img>
-          <Typography paragraph>Method:</Typography>
+          <div
+            id="resume-wrapper"
+            onClick={() => {
+              console.log("clicking resume");
+            }}
+          >
+            <img
+              id="resume-jpg"
+              src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/resume.jpg"
+            ></img>
+          </div>
+          {/* <Typography paragraph>Method:</Typography>
           <Typography paragraph>
             Heat 1/2 cup of the broth in a pot until simmering, add saffron and
             set aside for 10 minutes.
@@ -131,7 +141,7 @@ export default function Profile() {
           <Typography>
             Set aside off of the heat to let rest for 10 minutes, and then
             serve.
-          </Typography>
+          </Typography> */}
         </CardContent>
       </Collapse>
     </Card>

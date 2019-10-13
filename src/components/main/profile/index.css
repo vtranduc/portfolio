@@ -16,3 +16,14 @@
   flex-direction: column;
   justify-content: center;
 }
+
+#resume-wrapper {
+  overflow: auto;
+  cursor: pointer;
+  /* border: solid red; */
+}
+
+#resume-jpg {
+  max-width: 100%;
+  max-height: auto;
+}
