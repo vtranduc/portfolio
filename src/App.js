@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <NavBar></NavBar>
+      <div className="container"></div>
       <div id="content-wrapper-app">
         <Main></Main>
       </div>

@@ -43,7 +43,11 @@ export default function Profile() {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
+      <CardActionArea
+        onClick={() => {
+          setExpanded(!expanded);
+        }}
+      >
         <CardMedia
           className={classes.media}
           image="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/profile-pic.jpg"

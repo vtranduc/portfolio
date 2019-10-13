@@ -21,3 +21,29 @@
   margin-bottom: 5px;
   /* border: solid; */
 }
+
+#main-nav-btn-div {
+  border: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-nav-btn {
+  width: 4.5em;
+}
+
+@media (min-width: 1000px) {
+  #main-paper {
+    /* border: solid green; */
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #main-paper {
+    /* border: solid red; */
+    width: 100%;
+  }
+}
