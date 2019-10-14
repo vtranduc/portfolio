@@ -36,7 +36,7 @@
 
 @media (min-width: 1000px) {
   #main-paper {
-    /* border: solid green; */
+    border: solid green;
     width: 1000px;
   }
 }

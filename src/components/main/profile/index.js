@@ -112,6 +112,9 @@ export default function Profile() {
             id="resume-wrapper"
             onClick={() => {
               console.log("clicking resume");
+              window.open(
+                "https://drive.google.com/file/d/1-BD7f8wM8uVpAzwxBF1UbLt5t07H71OO/view?usp=sharing"
+              );
             }}
           >
             <img
