@@ -22,6 +22,29 @@ export default function Projects() {
           Paper can be used to build surface or other elements for your
           application.
         </Typography>
+        <Typography component="p">
+          Paper can be used to build surface or other elements for your
+          application.
+        </Typography>
+        <Typography component="p">
+          Paper can be used to build surface or other elements for your
+          application.
+        </Typography>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
       </Paper>
     </div>
   );

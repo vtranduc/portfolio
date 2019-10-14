@@ -23,7 +23,8 @@
 }
 
 #main-nav-btn-div {
-  /* border: solid; */
+  margin-top: 0;
+  border: solid;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -36,7 +37,8 @@
 
 @media (min-width: 1000px) {
   #main-paper {
-    /* border: solid green; */
+    border: solid green;
+    /* padding-top: 10px; */
     width: 950px;
   }
 }

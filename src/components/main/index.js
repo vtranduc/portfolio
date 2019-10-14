@@ -27,10 +27,14 @@ export default function Main() {
             variant="contained"
             color="default"
             className={classes.button}
+            onClick={() => {
+              console.log("jump to profile");
+              window.location.href = "#profile-wrapper";
+            }}
           >
             <img
               className="main-nav-btn"
-              src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/icon4.png"
+              src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/icon.png"
             ></img>
           </Button>
           <Button
@@ -40,7 +44,7 @@ export default function Main() {
           >
             <img
               className="main-nav-btn"
-              src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/icon4.png"
+              src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/icon2.png"
             ></img>
           </Button>
           <Button
@@ -50,7 +54,7 @@ export default function Main() {
           >
             <img
               className="main-nav-btn"
-              src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/icon4.png"
+              src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/icon3.png"
             ></img>
           </Button>
           <Button
@@ -66,7 +70,7 @@ export default function Main() {
         </div>
         <div id="content-centerer">
           <div id="content-wrapper-main">
-            <div className="content-main">
+            <div className="content-main" id="profile-wrapper">
               <Profile></Profile>
             </div>
             <div className="content-main">
