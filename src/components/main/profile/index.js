@@ -77,19 +77,34 @@ export default function Profile() {
       </CardActionArea>
       <CardActions>
         <div id="profile-action">
-          <div>
-            {/* <div style={{ border: "solid" }}> */}
-            {/* <div>
-              <img src="./github.svg"></img>
-            </div> */}
-            <Contact size="small" color="primary" txt="Reach out"></Contact>
-            {/* </div> */}
-            {/* <Button size="small" color="primary">
-              Email Meee!
-            </Button>
-            <Button size="small" color="primary">
-              Learn More
-            </Button> */}
+          <div id="contact-icons-wrapper">
+            <div
+              class="contact-icon-wrapper"
+              onClick={() => {
+                window.open("https://github.com/vtranduc/");
+              }}
+            >
+              <img
+                src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/github.png"
+                alt="githubIcon"
+                class="contact-icon"
+              ></img>
+            </div>
+            <div
+              class="contact-icon-wrapper"
+              onClick={() => {
+                window.open("https://www.linkedin.com/in/vtranduc/");
+              }}
+            >
+              <img
+                src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/linkedin.png"
+                alt="linkedinIcon"
+                class="contact-icon"
+              ></img>
+            </div>
+            <div class="contact-icon-wrapper">
+              <Contact size="small" color="primary" txt="Reach out"></Contact>
+            </div>
           </div>
           {/* ---------------------------------------------------------------------------- */}
           <div id="expand-btn">
@@ -118,7 +133,6 @@ export default function Profile() {
           <div
             id="resume-wrapper"
             onClick={() => {
-              console.log("clicking resume");
               window.open(
                 "https://drive.google.com/file/d/1-BD7f8wM8uVpAzwxBF1UbLt5t07H71OO/view?usp=sharing"
               );
