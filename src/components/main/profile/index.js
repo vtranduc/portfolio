@@ -79,6 +79,7 @@ export default function Profile() {
         <div id="profile-action">
           <div>
             {/* <div style={{ border: "solid" }}> */}
+            <div></div>
             <Contact size="small" color="primary" txt="Reach out"></Contact>
             {/* </div> */}
             {/* <Button size="small" color="primary">
