@@ -19,12 +19,14 @@
 .content-main {
   margin-top: 5px;
   margin-bottom: 5px;
+  width: auto;
   /* border: solid; */
+  /* width: 100px; */
 }
 
 #main-nav-btn-div {
   margin-top: 0;
-  border: solid;
+  /* border: solid; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -37,15 +39,23 @@
 
 @media (min-width: 1000px) {
   #main-paper {
-    border: solid green;
+    /* border: solid green; */
     /* padding-top: 10px; */
     width: 950px;
+  }
+
+  .content-main {
+    max-width: 940px;
   }
 }
 
 @media (max-width: 1000px) {
   #main-paper {
-    border: solid red;
+    /* border: solid red; */
     width: auto;
+  }
+
+  .content-main {
+    max-width: 89vw;
   }
 }

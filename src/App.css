@@ -16,8 +16,8 @@
 /* }​ */
 
 .container {
-  width: 100%;
-  height: 100px;
+  width: auto;
+  height: 150px;
   background-image: url("https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/profile-pic.jpg");
   background-size: cover;
   background-repeat: no-repeat;

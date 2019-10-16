@@ -10,6 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import IconButton from "@material-ui/core/IconButton";
 import Collapse from "@material-ui/core/Collapse";
+import Contact from "../contact/index";
 import clsx from "clsx";
 import "./index.css";
 
@@ -63,26 +64,29 @@ export default function Profile() {
           </Typography> */}
           <Typography variant="body2" color="textPrimary" component="p">
             I am an aspiring full-stack web developer and also a mobile app
-            developer! I have built several web applications using variety of
-            tech stacks. I am also equipped with strong mathematical and
-            engineering background, which allows to excel in advanced web
-            applications, such as building custom game engine and mathematical
-            modeling etc. My passion in computing science has earned me Master's
-            degree in Chemical Engineering, and my years of experience in coding
-            and learning technologies allow me to work effectively both
-            independent and team setting!
+            developer based in Toronto, ON! I have built several web
+            applications using variety of tech stacks. I am also equipped with
+            strong mathematical and engineering background, which allows to
+            excel in advanced web applications, such as building custom game
+            engine and mathematical modeling etc. My passion in computing
+            science has earned me Master's degree in Chemical Engineering, and
+            my years of experience in coding and learning technologies allow me
+            to work effectively both independent and team setting!
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <div id="profile-action">
           <div>
-            <Button size="small" color="primary">
-              Email Me!
+            {/* <div style={{ border: "solid" }}> */}
+            <Contact size="small" color="primary" txt="Reach out"></Contact>
+            {/* </div> */}
+            {/* <Button size="small" color="primary">
+              Email Meee!
             </Button>
             <Button size="small" color="primary">
               Learn More
-            </Button>
+            </Button> */}
           </div>
           {/* ---------------------------------------------------------------------------- */}
           <div id="expand-btn">
