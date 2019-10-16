@@ -28,7 +28,7 @@ export default function TechStacks() {
         </Typography>
 
         <a
-          frameborder="0"
+          frameBorder="0"
           data-theme="dark"
           data-layers="1,2,3,4"
           data-stack-embed="true"

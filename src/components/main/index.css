@@ -34,7 +34,8 @@
 }
 
 .main-nav-btn {
-  width: 4.5em;
+  width: 10vw;
+  max-width: 90px;
 }
 
 @media (min-width: 1000px) {

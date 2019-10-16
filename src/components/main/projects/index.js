@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import BriefDisplay from "./briefDisplay";
+import projectData from "../../../db/projectData";
 import "./index.css";
 
 const useStyles = makeStyles(theme => ({
@@ -17,6 +18,8 @@ const useStyles = makeStyles(theme => ({
 
 export default function Projects() {
   const classes = useStyles();
+
+  console.log("show hERE", projectData);
 
   return (
     <div>
@@ -44,14 +47,14 @@ export default function Projects() {
           <BriefDisplay></BriefDisplay>
           <BriefDisplay></BriefDisplay>
         </Paper>
-        <iframe
+        {/* <iframe
           width="560"
           height="315"
           src="https://www.youtube.com/embed/EFTXFHAlir0"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-        ></iframe>
+        ></iframe> */}
         {/* <p>aa</p>
         <p>aa</p>
         <p>aa</p>

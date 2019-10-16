@@ -79,7 +79,7 @@ export default function Profile() {
         <div id="profile-action">
           <div id="contact-icons-wrapper">
             <div
-              class="contact-icon-wrapper"
+              className="contact-icon-wrapper"
               onClick={() => {
                 window.open("https://github.com/vtranduc/");
               }}
@@ -87,11 +87,11 @@ export default function Profile() {
               <img
                 src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/github.png"
                 alt="githubIcon"
-                class="contact-icon"
+                className="contact-icon"
               ></img>
             </div>
             <div
-              class="contact-icon-wrapper"
+              className="contact-icon-wrapper"
               onClick={() => {
                 window.open("https://www.linkedin.com/in/vtranduc/");
               }}
@@ -99,10 +99,10 @@ export default function Profile() {
               <img
                 src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/linkedin.png"
                 alt="linkedinIcon"
-                class="contact-icon"
+                className="contact-icon"
               ></img>
             </div>
-            <div class="contact-icon-wrapper">
+            <div className="contact-icon-wrapper">
               <Contact size="small" color="primary" txt="Reach out"></Contact>
             </div>
           </div>

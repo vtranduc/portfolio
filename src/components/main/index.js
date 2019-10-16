@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(3, 2)
   },
   button: {
-    margin: theme.spacing(1)
+    // margin: theme.spacing(1)
     // border: "solid red;"
   }
 }));
