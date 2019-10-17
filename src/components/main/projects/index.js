@@ -38,8 +38,8 @@ export default function Projects() {
           Projects
         </Typography>
         <Typography component="p">
-          Paper can be used to build surface or other elements for your
-          application.
+          Here are some of my projects I have done in the past. All the
+          projects' repositories are available on my github!
         </Typography>
         {/* <Typography component="p">
           Paper can be used to build surface or other elements for your
