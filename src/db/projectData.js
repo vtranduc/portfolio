@@ -49,9 +49,11 @@ const projectData = [
   {
     id: 4,
     title: "Anime Art Puzzle",
-    thumbnail: "https://images7.alphacoders.com/541/541804.jpg",
-    summary: "hello world",
+    thumbnail:
+      "https://raw.githubusercontent.com/vtranduc/Android-customizable-puzzle-game/master/docs/thumbnail.png",
     repository: "https://github.com/vtranduc/Android-customizable-puzzle-game",
+    summary: `The game built in Python with Kivy that can be compiled to run on Android smartphone, which I is available on Google Play! It is a puzzle game featuring the art works of some recruited talents. When the game starts, the puzzle shuffles gradually more, making it harder over time. As the incentive, there are many stages that can be unlocked. The high scores can be saved in the game. The user can also choose any image from their phone and turn it into the puzzle.
+    The entire game engine, such as the placement of puzzle, puzzle shuffling, verification of finished puzzle, acceleration in the swipe, etc were developed.`,
     actions: [
       {
         name: "Find it on Google Play",
@@ -60,23 +62,23 @@ const projectData = [
           "https://play.google.com/store/apps/details?id=ca.ualberta.customizableanimeartpuzzle"
       }
     ]
-  },
-  {
-    id: 5,
-    title: "Interactive event scheduler",
-    thumbnail: "https://images6.alphacoders.com/541/541806.jpg",
-    summary: "hello world",
-    repository: "https://github.com/vtranduc/interactive-event-scheduler",
-    actions: []
-  },
-  {
-    id: 6,
-    title: "lhl card games",
-    thumbnail: "https://images5.alphacoders.com/584/584471.png",
-    summary: "hello world",
-    repository: "https://github.com/tylercaceres/lhl_card_games_2",
-    actions: []
   }
+  // {
+  //   id: 5,
+  //   title: "Interactive event scheduler",
+  //   thumbnail: "https://images6.alphacoders.com/541/541806.jpg",
+  //   summary: "hello world",
+  //   repository: "https://github.com/vtranduc/interactive-event-scheduler",
+  //   actions: []
+  // },
+  // {
+  //   id: 6,
+  //   title: "lhl card games",
+  //   thumbnail: "https://images5.alphacoders.com/584/584471.png",
+  //   summary: "hello world",
+  //   repository: "https://github.com/tylercaceres/lhl_card_games_2",
+  //   actions: []
+  // }
 ];
 
 export default projectData;
