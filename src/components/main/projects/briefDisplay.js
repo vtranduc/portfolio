@@ -7,6 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import addLineBreaks from "../../../helpers/addLineBreaks";
 import "./briefDisplay.css";
 
 const useStyles = makeStyles({
@@ -17,7 +18,13 @@ const useStyles = makeStyles({
   }
 });
 
-export default function BriefDisplay() {
+export default function BriefDisplay({
+  thumbnail,
+  title,
+  summary,
+  repository,
+  actions
+}) {
   const classes = useStyles();
 
   return (
@@ -27,42 +34,49 @@ export default function BriefDisplay() {
           component="img"
           alt="Contemplative Reptile"
           height="140"
-          image="https://images2.alphacoders.com/518/518321.jpg"
+          image={thumbnail}
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            {title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica Lizards are
-            a widespread group of squamate reptiles, with over 6,000 species,
-            ranging across all continents except Antarctica Lizards are a
-            widespread group of squamate reptiles, with over 6,000 species,
-            ranging across all continents except Antarctica Lizards are a
-            widespread group of squamate reptiles, with over 6,000 species,
-            ranging across all continents except Antarctica Lizards are a
-            widespread group of squamate reptiles, with over 6,000 species,
-            ranging across all continents except Antarctica Lizards are a
-            widespread group of squamate reptiles, with over 6,000 species,
-            ranging across all continents except Antarctica Lizards are a
-            widespread group of squamate reptiles, with over 6,000 species,
-            ranging across all continents except Antarctica Lizards are a
-            widespread group of squamate reptiles, with over 6,000 species,
-            ranging across all continents except Antarctica Lizards are a
-            widespread group of squamate reptiles, with over 6,000 species,
-            ranging across all continents except Antarctica
+            {addLineBreaks(summary)}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
+        {repository && (
+          <Button
+            size="small"
+            color="primary"
+            onClick={() => {
+              window.open(repository);
+            }}
+          >
+            Repository
+          </Button>
+        )}
+        {/* <Button size="small" color="primary">
           Learn More
-        </Button>
+        </Button> */}
+        {actions.map((e, i) => {
+          return (
+            <Button
+              size="small"
+              color="primary"
+              key={i}
+              onClick={() => {
+                if (e.type === "openNewPage") {
+                  window.open(e.url);
+                }
+              }}
+            >
+              {e.name}
+            </Button>
+          );
+        })}
       </CardActions>
     </Card>
   );

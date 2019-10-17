@@ -18,34 +18,45 @@ const useStyles = makeStyles(theme => ({
 
 export default function Projects() {
   const classes = useStyles();
-
-  console.log("show hERE", projectData);
+  const projectList = projectData.map(e => {
+    return (
+      <BriefDisplay
+        key={e.id}
+        title={e.title}
+        summary={e.summary}
+        thumbnail={e.thumbnail}
+        repository={e.repository}
+        actions={e.actions}
+      ></BriefDisplay>
+    );
+  });
 
   return (
     <div>
       <Paper className={classes.root}>
         <Typography variant="h5" component="h3">
-          Completed projects
+          Projects
         </Typography>
         <Typography component="p">
+          Paper can be used to build surface or other elements for your
+          application.
+        </Typography>
+        {/* <Typography component="p">
           Paper can be used to build surface or other elements for your
           application.
         </Typography>
         <Typography component="p">
           Paper can be used to build surface or other elements for your
           application.
-        </Typography>
-        <Typography component="p">
-          Paper can be used to build surface or other elements for your
-          application.
-        </Typography>
+        </Typography> */}
         <Paper className={classes.briefShowcase} id="brief-display-container">
+          {projectList}
+          {/* <BriefDisplay></BriefDisplay>
           <BriefDisplay></BriefDisplay>
           <BriefDisplay></BriefDisplay>
           <BriefDisplay></BriefDisplay>
           <BriefDisplay></BriefDisplay>
-          <BriefDisplay></BriefDisplay>
-          <BriefDisplay></BriefDisplay>
+          <BriefDisplay></BriefDisplay> */}
         </Paper>
         {/* <iframe
           width="560"

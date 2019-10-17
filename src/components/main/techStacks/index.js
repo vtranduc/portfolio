@@ -29,7 +29,7 @@ export default function TechStacks() {
 
         <a
           frameBorder="0"
-          data-theme="dark"
+          data-theme="light"
           data-layers="1,2,3,4"
           data-stack-embed="true"
           href="https://embed.stackshare.io/stacks/embed/3fcb281de5b8c8cc9bfc2c22b35282"
