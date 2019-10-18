@@ -26,6 +26,7 @@
 
 #main-nav-btn-div {
   margin-top: 0;
+  margin-bottom: 0.8em;
   /* border: solid; */
   display: flex;
   flex-direction: row;

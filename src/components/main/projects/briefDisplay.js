@@ -35,7 +35,7 @@ export default function BriefDisplay({
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
-          height="140"
+          height="180"
           image={thumbnail}
           title="Contemplative Reptile"
         />

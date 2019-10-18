@@ -1,4 +1,4 @@
-// Action types: openNewPage
+// Action types: openNewPage, openNewPageWithImg
 
 const projectData = [
   {

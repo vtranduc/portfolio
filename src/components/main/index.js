@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
+// import Paper from "@material-ui/core/Paper";
 import Profile from "./profile/index";
 import Projects from "./projects/index";
 import TechStacks from "./techStacks/index";
