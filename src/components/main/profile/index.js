@@ -5,7 +5,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import IconButton from "@material-ui/core/IconButton";
@@ -138,7 +138,7 @@ export default function Profile() {
               );
             }}
           >
-            <img id="resume-jpg" src="main/resume.jpg"></img>
+            <img id="resume-jpg" src="main/resume.jpg" alt="resume"></img>
           </div>
           {/* <Typography paragraph>Method:</Typography>
           <Typography paragraph>

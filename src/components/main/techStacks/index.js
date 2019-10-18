@@ -25,7 +25,7 @@ export default function TechStacks() {
         work effectively with the web applications that have been around for
         long time. Here are some of the tech stacks I am fluent at!
       </Typography>
-
+      {/* <Anchor> */}
       <a
         frameBorder="0"
         data-theme="light"
@@ -33,6 +33,7 @@ export default function TechStacks() {
         data-stack-embed="true"
         href="https://embed.stackshare.io/stacks/embed/3fcb281de5b8c8cc9bfc2c22b35282"
       />
+      {/* </Anchor> */}
     </Paper>
   );
 }

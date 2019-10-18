@@ -35,7 +35,8 @@ export default function Main() {
           >
             <img
               className="main-nav-btn"
-              src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/icon.png"
+              src="main/icon.png"
+              alt="go-to-profile-btn"
             ></img>
           </Button>
           <Button
@@ -48,7 +49,8 @@ export default function Main() {
           >
             <img
               className="main-nav-btn"
-              src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/icon2.png"
+              alt="go-to-skills-btn"
+              src="main/icon2.png"
             ></img>
           </Button>
           <Button
@@ -61,16 +63,15 @@ export default function Main() {
           >
             <img
               className="main-nav-btn"
-              src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/icon3.png"
+              alt="go-to-project-btn"
+              src="main/icon3.png"
             ></img>
           </Button>
           <Contact
             variant="contained"
             color="default"
             classBtn={classes.button}
-            img={
-              "https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/icon4.png"
-            }
+            img={"main/icon4.png"}
           ></Contact>
         </div>
         <div id="content-centerer">

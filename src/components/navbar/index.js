@@ -98,9 +98,9 @@ export default function NavBar() {
     handleMobileMenuClose();
   };
 
-  const handleMobileMenuOpen = event => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
+  // const handleMobileMenuOpen = event => {
+  //   setMobileMoreAnchorEl(event.currentTarget);
+  // };
 
   const menuId = "primary-search-account-menu";
   const renderMenu = (
@@ -170,7 +170,7 @@ export default function NavBar() {
             aria-label="open drawer"
           >
             {/* <MenuIcon /> */}
-            <img src="favicon-32x32.png" />
+            <img src="favicon-32x32.png" alt="favicon-png" />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
             Welcome to Nick (Viet-Nhien)'s portfolio!
