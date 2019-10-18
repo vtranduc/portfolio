@@ -36,7 +36,7 @@ export default function BriefDisplay({
   const classes = useStyles();
 
   return (
-    <Card className={classes.card} id="brief-display-wrapper">
+    <Card className={`${classes.card} brief-display-wrapper`}>
       <CardActionArea
       // style={{ display: "flex", flexDirection: "row", width: "50em" }}
       >

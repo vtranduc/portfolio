@@ -8,3 +8,32 @@
   overflow: auto;
   border: solid;
 } */
+
+#project-paper {
+  /* border: solid green; */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  /*  */
+  /* position: fixed; */
+  /* width: 100%;
+  top: 63px;
+  bottom: 0px;
+  z-index: -1000;
+  background-image: url("https://media.giphy.com/media/cmegx6SssTKmEFEcwj/giphy.gif");
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background-color: #e6f7ff;
+}
+
+/* #project-paper {
+  background-color: #ff0;
+}
+
+#project-paper:hover {
+  background-color: #ad310b;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+} */

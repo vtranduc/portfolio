@@ -13,7 +13,8 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(3, 2)
   },
   gridDiv: {
-    flexGrow: 1
+    flexGrow: 1,
+    margin: "0.5em"
   },
   paper: {
     padding: theme.spacing(2),
@@ -44,7 +45,7 @@ export default function Projects() {
   });
 
   return (
-    <Paper className={classes.root}>
+    <Paper className={classes.root} id="project-paper">
       <Typography variant="h5" component="h3">
         Projects
       </Typography>
