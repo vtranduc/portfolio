@@ -51,7 +51,7 @@ export default function Profile() {
       >
         <CardMedia
           className={classes.media}
-          image="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/profile-pic.jpg"
+          image="main/profile-pic.jpg"
           title="profile-image"
         />
         <CardContent>
@@ -85,7 +85,7 @@ export default function Profile() {
               }}
             >
               <img
-                src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/github.png"
+                src="main/github.png"
                 alt="githubIcon"
                 className="contact-icon"
               ></img>
@@ -97,7 +97,7 @@ export default function Profile() {
               }}
             >
               <img
-                src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/linkedin.png"
+                src="main/linkedin.png"
                 alt="linkedinIcon"
                 className="contact-icon"
               ></img>
@@ -138,10 +138,7 @@ export default function Profile() {
               );
             }}
           >
-            <img
-              id="resume-jpg"
-              src="https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/resume.jpg"
-            ></img>
+            <img id="resume-jpg" src="main/resume.jpg"></img>
           </div>
           {/* <Typography paragraph>Method:</Typography>
           <Typography paragraph>

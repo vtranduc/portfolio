@@ -21,10 +21,10 @@ export default function TechStacks() {
           TechStacks
         </Typography>
         <Typography component="p">
-          I the past projects, I have used and learned many technologies for web
-          development. I embrace the new modern technologies while still work
-          effectively with the web applications that have been around for long
-          time. Here are some of the tech stacks I am fluent at!
+          In the past projects, I have used and learned many technologies for
+          web and app developments. I embrace the new modern technologies while
+          still work effectively with the web applications that have been around
+          for long time. Here are some of the tech stacks I am fluent at!
         </Typography>
 
         <a

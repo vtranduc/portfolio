@@ -3,7 +3,7 @@
 const projectData = [
   {
     id: 1,
-    title: "Real time react networking games",
+    title: "Real time react multiplayers networking games",
     thumbnail:
       "https://raw.githubusercontent.com/vtranduc/real-time-react-networking-games/master/docs/soccer.png",
 
@@ -35,8 +35,8 @@ const projectData = [
       "https://raw.githubusercontent.com/vtranduc/Solution-to-Cahn-Hilliard-with-Flory-Huggins-equation/master/docs/Viscous-Cahn-Hilliard.png",
     repository:
       "https://github.com/vtranduc/Solution-to-Cahn-Hilliard-with-Flory-Huggins-equation",
-    summary: `This is only one part of my Master's thesis in the departmetn of Chemical Engineering at Ryerson University.
-    Phase separation of binary polymer fluid is often described mathematically using Cahn-Hilliard theory and Flory-Huggins theory. For many years, this imposes researchers a lot of difficulties in numerical study due to forth order differential equation which is also highly non-linear. Dr. Philip Chan (my supervisor) and Dr. Alejandro D.Rey tackled the problem using Galerkin Finite Element method with bicubic Hermitian basis functions. Over years, Dr. Philip Chan's research team has used to model to study phase separation in variety of condition such as temperature gradient.
+    summary: `This is only one part of my Master's thesis in the department of Chemical Engineering at Ryerson University.
+    Phase separation of binary polymer fluid is often described mathematically using Cahn-Hilliard theory and Flory-Huggins theory. For many years, this imposes researchers a lot of difficulties in numerical study as it is a highly non-linear fourth order differential equation. Dr. Philip Chan (my supervisor) and Dr. Alejandro D.Rey tackled the problem using Galerkin Finite Element method with bicubic Hermitian basis functions. Over years, Dr. Philip Chan's research team has expanded the model to study phase separation in variety of condition such as temperature gradient.
     In this model, I have implemented extremely efficient algorithm so that the program, that would normally take days or even week to run, to run in less than an hour on home PC by taking advantage of SuiteSparse and parallel-computation. I have also implemented sophisticated algorithm, for the first time, to tackle complex domain.`,
     actions: [
       {
@@ -57,7 +57,8 @@ const projectData = [
     actions: [
       {
         name: "Find it on Google Play",
-        type: "openNewPage",
+        type: "openNewPageWithImg",
+        img: "main/projects/google-play-badge.png",
         url:
           "https://play.google.com/store/apps/details?id=ca.ualberta.customizableanimeartpuzzle"
       }

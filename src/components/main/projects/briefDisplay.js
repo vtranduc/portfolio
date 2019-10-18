@@ -10,13 +10,21 @@ import Typography from "@material-ui/core/Typography";
 import addLineBreaks from "../../../helpers/addLineBreaks";
 import "./briefDisplay.css";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   card: {
     // maxWidth: 34500
     // width: 300
     // minWidth: 600
+  },
+  root: {
+    flexGrow: 1
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+    color: theme.palette.text.secondary
   }
-});
+}));
 
 export default function BriefDisplay({
   thumbnail,
@@ -49,36 +57,55 @@ export default function BriefDisplay({
         </CardContent>
       </CardActionArea>
       <CardActions>
-        {repository && (
-          <Button
-            size="small"
-            color="primary"
-            onClick={() => {
-              window.open(repository);
-            }}
-          >
-            Repository
-          </Button>
-        )}
-        {/* <Button size="small" color="primary">
-          Learn More
-        </Button> */}
-        {actions.map((e, i) => {
-          return (
+        <div
+          className={`${classes.root} brief-display-action-wrap`}
+          // style={{ border: "solid green" }}
+        >
+          {repository && (
+            // <div style={{ border: "solid" }}>
             <Button
               size="small"
               color="primary"
-              key={i}
               onClick={() => {
-                if (e.type === "openNewPage") {
-                  window.open(e.url);
-                }
+                window.open(repository);
               }}
             >
-              {e.name}
+              Repository
             </Button>
-          );
-        })}
+            // </div>
+          )}
+          {actions.map((e, i) => {
+            return (
+              <div key={i}>
+                {e.type === "openNewPage" && (
+                  <Button
+                    size="small"
+                    color="primary"
+                    onClick={() => {
+                      window.open(e.url);
+                    }}
+                  >
+                    {e.name}
+                  </Button>
+                )}
+                {e.type === "openNewPageWithImg" && (
+                  <div
+                    className="brief-display-img-btn-div"
+                    onClick={() => {
+                      window.open(e.url);
+                    }}
+                  >
+                    <img
+                      className="brief-display-img-btn"
+                      src={e.img}
+                      alt={e.img}
+                    ></img>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </CardActions>
     </Card>
   );
