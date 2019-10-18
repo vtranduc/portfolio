@@ -9,9 +9,9 @@ import Contact from "./contact/index";
 import "./index.css";
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    padding: theme.spacing(3, 2)
-  },
+  // root: {
+  //   padding: theme.spacing(3, 2)
+  // },
   button: {
     // margin: theme.spacing(1)
     // border: "solid red;"
@@ -23,7 +23,7 @@ export default function Main() {
 
   return (
     <div id="parent">
-      <Paper className={classes.root} id="main-paper">
+      <div id="main-paper">
         <div id="main-nav-btn-div">
           <Button
             variant="contained"
@@ -86,7 +86,7 @@ export default function Main() {
             </div>
           </div>
         </div>
-      </Paper>
+      </div>
     </div>
   );
 }
