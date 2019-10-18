@@ -1,10 +1,10 @@
-#brief-display-container {
+/* #brief-display-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   width: auto;
-  /* width: auto; */
-  /* max-width: auto; */
+  width: auto;
+  max-width: auto;
   overflow: auto;
-  /* border: solid; */
-}
+  border: solid;
+} */

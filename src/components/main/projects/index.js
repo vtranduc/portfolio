@@ -4,84 +4,59 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import BriefDisplay from "./briefDisplay";
 import projectData from "../../../db/projectData";
+import Grid from "@material-ui/core/Grid";
+import useWindowWidth from "../../../helpers/useWindowWidth";
 import "./index.css";
 
 const useStyles = makeStyles(theme => ({
   root: {
     padding: theme.spacing(3, 2)
   },
+  gridDiv: {
+    flexGrow: 1
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+    color: theme.palette.text.secondary
+  },
   briefShowcase: {
-    // maxWidth: 300
     maxWidth: "auto"
   }
 }));
 
 export default function Projects() {
   const classes = useStyles();
+  const width = useWindowWidth();
   const projectList = projectData.map(e => {
     return (
-      <BriefDisplay
-        key={e.id}
-        title={e.title}
-        summary={e.summary}
-        thumbnail={e.thumbnail}
-        repository={e.repository}
-        actions={e.actions}
-      ></BriefDisplay>
+      <Grid key={e.id} item xs={width > 800 ? 6 : 12}>
+        <BriefDisplay
+          className={classes.paper}
+          title={e.title}
+          summary={e.summary}
+          thumbnail={e.thumbnail}
+          repository={e.repository}
+          actions={e.actions}
+        ></BriefDisplay>
+      </Grid>
     );
   });
 
   return (
-    <div>
-      <Paper className={classes.root}>
-        <Typography variant="h5" component="h3">
-          Projects
-        </Typography>
-        <Typography component="p">
-          Here are some of my projects I have done in the past. All the
-          projects' repositories are available on my github!
-        </Typography>
-        {/* <Typography component="p">
-          Paper can be used to build surface or other elements for your
-          application.
-        </Typography>
-        <Typography component="p">
-          Paper can be used to build surface or other elements for your
-          application.
-        </Typography> */}
-        <Paper className={classes.briefShowcase} id="brief-display-container">
+    <Paper className={classes.root}>
+      <Typography variant="h5" component="h3">
+        Projects
+      </Typography>
+      <Typography component="p">
+        Here are some of my projects I have done in the past. All the projects'
+        repositories are available on my github!
+      </Typography>
+      <div className={classes.gridDiv}>
+        <Grid container spacing={3}>
           {projectList}
-          {/* <BriefDisplay></BriefDisplay>
-          <BriefDisplay></BriefDisplay>
-          <BriefDisplay></BriefDisplay>
-          <BriefDisplay></BriefDisplay>
-          <BriefDisplay></BriefDisplay>
-          <BriefDisplay></BriefDisplay> */}
-        </Paper>
-        {/* <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/EFTXFHAlir0"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe> */}
-        {/* <p>aa</p>
-        <p>aa</p>
-        <p>aa</p>
-        <p>aa</p>
-        <p>aa</p>
-        <p>aa</p>
-        <p>aa</p>
-        <p>aa</p>
-        <p>aa</p>
-        <p>aa</p>
-        <p>aa</p>
-        <p>aa</p>
-        <p>aa</p>
-        <p>aa</p>
-        <p>aa</p> */}
-      </Paper>
-    </div>
+        </Grid>
+      </div>
+    </Paper>
   );
 }

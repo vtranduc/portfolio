@@ -13,8 +13,8 @@ import "./briefDisplay.css";
 const useStyles = makeStyles({
   card: {
     // maxWidth: 34500
-    width: 300,
-    minWidth: 300
+    // width: 300
+    // minWidth: 600
   }
 });
 
@@ -29,7 +29,9 @@ export default function BriefDisplay({
 
   return (
     <Card className={classes.card} id="brief-display-wrapper">
-      <CardActionArea>
+      <CardActionArea
+      // style={{ display: "flex", flexDirection: "row", width: "50em" }}
+      >
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
