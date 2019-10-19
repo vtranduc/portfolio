@@ -8,17 +8,19 @@
 
 #cardMediaContainer {
   /* border: solid; */
-  display: flex;
+  display: flex inline;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  /* max-height: 140px; */
 }
 
 .greeting {
   display: inline;
   color: #ffffff;
   text-shadow: 3px 5px 2px #474747;
-  margin: 2vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  /* margin: 2vw; */
 }
 
 #toronto-intro-1 {
