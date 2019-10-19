@@ -51,9 +51,22 @@ export default function Profile() {
       >
         <CardMedia
           className={classes.media}
-          image="main/profile-pic.jpg"
+          image="main/Toronto.jpg"
           title="profile-image"
-        />
+        >
+          <div id="cardMediaContainer">
+            <div id="toronto-intro-1">
+              <h1 className="greeting">Hello, I am Viet-Nhien Tran Duc</h1>
+            </div>
+            <div id="toronto-intro-2">
+              <h1 className="greeting">I am a full stack web developer!</h1>
+            </div>
+          </div>
+          {/* <h1 className="greeting">Hello, I am Viet-Nhien</h1>
+          <div id="intro2">
+            <h1 className="greeting">I am a full-stack web developer!</h1>
+          </div> */}
+        </CardMedia>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             I am an aspiring full-stack web developer!
@@ -134,7 +147,7 @@ export default function Profile() {
             id="resume-wrapper"
             onClick={() => {
               window.open(
-                "https://drive.google.com/file/d/1-BD7f8wM8uVpAzwxBF1UbLt5t07H71OO/view?usp=sharing"
+                "https://drive.google.com/file/d/1NT0btbd__QWtkGMMiN-pP2sQlV1Qelwy/view?usp=sharing"
               );
             }}
           >

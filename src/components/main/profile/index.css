@@ -6,6 +6,41 @@
   justify-content: space-between;
 }
 
+#cardMediaContainer {
+  /* border: solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.greeting {
+  display: inline;
+  color: #ffffff;
+  text-shadow: 3px 5px 2px #474747;
+  margin: 2vw;
+}
+
+#toronto-intro-1 {
+  /* border: solid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#toronto-intro-2 {
+  /* border: solid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* #intro2 {
+  border: solid;
+  display: inline-block;
+  height: 100%;
+} */
+
 #contact-icons-wrapper {
   display: flex;
 }
