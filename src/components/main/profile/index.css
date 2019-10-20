@@ -9,6 +9,7 @@
 #cardMediaContainer {
   /* border: solid; */
   display: flex inline;
+  /* height: 100%; */
   flex-direction: column;
   justify-content: center;
   /* max-height: 140px; */
@@ -20,7 +21,6 @@
   text-shadow: 3px 5px 2px #474747;
   margin-right: 2vw;
   margin-left: 2vw;
-  /* margin: 2vw; */
 }
 
 #toronto-intro-1 {
@@ -37,11 +37,31 @@
   justify-content: flex-end;
 }
 
-/* #intro2 {
-  border: solid;
-  display: inline-block;
-  height: 100%;
-} */
+@media screen and (min-width: 600px) {
+  .greeting {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 500px) {
+  .greeting {
+    font-size: 25px;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 350px) {
+  .greeting {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 350px) and (min-width: 00px) {
+  .greeting {
+    font-size: 1.1em;
+  }
+}
 
 #contact-icons-wrapper {
   display: flex;
