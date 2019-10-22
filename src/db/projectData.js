@@ -63,6 +63,26 @@ const projectData = [
           "https://play.google.com/store/apps/details?id=ca.ualberta.customizableanimeartpuzzle"
       }
     ]
+  },
+  {
+    id: 5,
+    title: "Interactive event scheduler",
+    thumbnail:
+      "https://raw.githubusercontent.com/vtranduc/interactive-event-scheduler/master/docs/thumbnail.png",
+    repository: "https://github.com/vtranduc/interactive-event-scheduler",
+    summary: `This app allows the user to create, view, search, join, leave, edit events, and more! Each event has a name, location, thumbnail, date, and description.
+    Each user has a customizable profile page and can even interact with others by writing on each other's wall.`,
+    actions: []
+  },
+  {
+    id: 6,
+    title: "LHL card games",
+    thumbnail:
+      "https://raw.githubusercontent.com/tylercaceres/lhl_card_games_2/master/docs/kings_cup.png",
+    repository: "https://github.com/tylercaceres/lhl_card_games_2",
+    summary: `Interactive, multiplayers, and networking card games with front-end developed using traditional jQuery. Socket.io is used to make immediate interactions between the users possible. Game logics is run on the server alone in order to avoid conflict.
+    The games include rock-paper-scissors and Kings cup. The users can create, join, and leave the room in the lobby, allowing different groups of players to play different sessions of the game, rather than everyone online in 1 large session, at a time.`,
+    actions: []
   }
   // {
   //   id: 5,

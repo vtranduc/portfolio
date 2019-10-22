@@ -36,10 +36,11 @@ export default function BriefDisplay({
   const classes = useStyles();
 
   return (
-    <Card className={`${classes.card} brief-display-wrapper`}>
-      <CardActionArea
-      // style={{ display: "flex", flexDirection: "row", width: "50em" }}
-      >
+    <Card
+      className={`${classes.card} brief-display-wrapper`}
+      style={{ backgroundColor: "#F0EFEF" }}
+    >
+      <CardActionArea>
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
@@ -51,18 +52,14 @@ export default function BriefDisplay({
           <Typography gutterBottom variant="h5" component="h2">
             {title}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="textPrimary" component="p">
             {addLineBreaks(summary)}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <div
-          className={`${classes.root} brief-display-action-wrap`}
-          // style={{ border: "solid green" }}
-        >
+        <div className={`${classes.root} brief-display-action-wrap`}>
           {repository && (
-            // <div style={{ border: "solid" }}>
             <Button
               size="small"
               color="primary"
@@ -72,7 +69,6 @@ export default function BriefDisplay({
             >
               Repository
             </Button>
-            // </div>
           )}
           {actions.map((e, i) => {
             return (

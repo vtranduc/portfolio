@@ -15,7 +15,7 @@ export default function TechStacks() {
   useScript("https://cdn1.stackshare.io/javascripts/client-code.js");
 
   return (
-    <Paper className={classes.root} style={{ backgroundColor: "#ccffcc" }}>
+    <Paper className={classes.root}>
       <Typography variant="h5" component="h3">
         TechStacks
       </Typography>
@@ -25,15 +25,15 @@ export default function TechStacks() {
         work effectively with the web applications that have been around for
         long time. Here are some of the tech stacks I am fluent at!
       </Typography>
-      {/* <Anchor> */}
       <a
-        frameBorder="0"
+        frameborder="0"
         data-theme="light"
         data-layers="1,2,3,4"
         data-stack-embed="true"
-        href="https://embed.stackshare.io/stacks/embed/3fcb281de5b8c8cc9bfc2c22b35282"
-      />
-      {/* </Anchor> */}
+        href="https://embed.stackshare.io/stacks/embed/55ce977da306a59355fa63428c1118"
+      >
+        My tech stacks are shown here
+      </a>
     </Paper>
   );
 }

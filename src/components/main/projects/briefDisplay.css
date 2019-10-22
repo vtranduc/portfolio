@@ -1,11 +1,18 @@
 .brief-display-wrapper {
   margin: 0em;
+  /* background-color: yellow; */
+  /* background-color: #f0efef; */
 }
+
+/* .brief-display-wrapper:after {
+  background-color: red;
+} */
 
 .brief-display-wrapper:hover {
   /* margin: 0; */
   /* border: solid; */
   box-shadow: 5px 8px 5px red;
+  /* background-color: yellow; */
   /* transform: translate(-2px, -2px); */
 }
 

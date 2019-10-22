@@ -24,7 +24,11 @@
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat; */
-  background-color: #e6f7ff;
+  /* background-color: #e6f7ff; */
+  /* background-image: url("https://media.giphy.com/media/10X5oVBTgURLtC/giphy.gif"); */
+  overflow: hidden;
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
 }
 
 /* #project-paper {
