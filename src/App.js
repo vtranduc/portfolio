@@ -4,11 +4,11 @@ import "./App.css";
 import NavBar from "./components/navbar/index";
 import Main from "./components/main/index";
 import Soccer from "./components/soccer/index";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
       <NavBar></NavBar>
       {/* <div className="container"></div> */}
       {/* <div id="content-wrapper-app">
@@ -22,7 +22,7 @@ function App() {
         </Switch>
       </div>
       {/* </div> */}
-    </Router>
+    </HashRouter>
   );
 }
 
