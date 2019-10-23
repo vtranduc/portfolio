@@ -1,16 +1,21 @@
-.container {
+/* .container {
   width: auto;
   height: 150px;
   background-image: url("https://raw.githubusercontent.com/vtranduc/portfolio/master/public/main/profile-pic.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-}
+} */
 
 #content-wrapper-app {
   width: 100%;
+  /* position: absolute; */
+  /* height: 100%; */
   /* border: solid green; */
   display: flex;
+  /* left: 100; */
+  /* flex-flow: column;
+  flex-grow: 1; */
   flex-direction: row;
   justify-content: center;
   /*  */

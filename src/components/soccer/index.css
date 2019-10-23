@@ -1,0 +1,9 @@
+/* #soccer-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+} */
+
+#soccer-paper {
+  margin: 20px;
+}
