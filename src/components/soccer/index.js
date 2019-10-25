@@ -5,12 +5,17 @@ import SoccerEngine from "../../gameEngine/soccer/index";
 import "./index.css";
 
 const fieldHeight = 700 / 1100;
-const playerSpec = { size: { width: 0.06, height: 0.09 }, accelMag: 0.8 };
+const playerSpec = {
+  size: { width: 0.06, height: 0.09 },
+  accelMag: 0.8,
+  reverseAccelMag: 1.7,
+  wallBounce: 0.5
+};
 const ballSpec = { size: { width: 0.05, height: 0.05 } };
 const engine = new SoccerEngine(fieldHeight, playerSpec, ballSpec);
 
 const tempId = "yami noma!";
-const tempId2 = "onyanoko";
+// const tempId2 = "onyanoko";
 
 export default function Soccer() {
   const [gameStat, setGameStat] = useState(null);
@@ -25,7 +30,11 @@ export default function Soccer() {
 
   const adjustment = {
     scale: fieldSpec.width,
-    shift: { x: fieldSpec.left, y: fieldSpec.top }
+    shift: { x: fieldSpec.left, y: fieldSpec.top },
+    playerSize: {
+      width: fieldSpec.width * playerSpec.size.width,
+      height: fieldSpec.width * playerSpec.size.height
+    }
   };
 
   const w = useKeyPress(["w", "W", "ArrowUp"]);
@@ -87,8 +96,8 @@ export default function Soccer() {
                 style={{
                   backgroundColor: "blue",
                   position: "absolute",
-                  width: "100px",
-                  height: "100px",
+                  width: adjustment.playerSize.width,
+                  height: adjustment.playerSize.height,
                   top: e.pos.y * adjustment.scale + adjustment.shift.y,
                   left: e.pos.x * adjustment.scale + adjustment.shift.x
                 }}

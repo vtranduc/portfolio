@@ -30,7 +30,7 @@ export default function Main() {
             color="default"
             className={classes.button}
             onClick={() => {
-              window.location.href = "#profile-wrapper";
+              document.getElementById("profile-wrapper").scrollIntoView();
             }}
           >
             <img
@@ -44,7 +44,7 @@ export default function Main() {
             color="default"
             className={classes.button}
             onClick={() => {
-              window.location.href = "#tech-stacks-wrapper";
+              document.getElementById("tech-stacks-wrapper").scrollIntoView();
             }}
           >
             <img
@@ -58,7 +58,7 @@ export default function Main() {
             color="default"
             className={classes.button}
             onClick={() => {
-              window.location.href = "#projects-wrapper";
+              document.getElementById("projects-wrapper").scrollIntoView();
             }}
           >
             <img

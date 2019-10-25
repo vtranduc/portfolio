@@ -26,7 +26,7 @@ export default function TechStacks() {
         long time. Here are some of the tech stacks I am fluent at!
       </Typography>
       <a
-        frameborder="0"
+        frameBorder="0"
         data-theme="light"
         data-layers="1,2,3,4"
         data-stack-embed="true"
