@@ -44,7 +44,7 @@ export default function Main() {
             color="default"
             className={classes.button}
             onClick={() => {
-              document.getElementById("tech-stacks-wrapper").scrollIntoView();
+              document.getElementById("techStacks-wrapper").scrollIntoView();
             }}
           >
             <img
@@ -82,7 +82,7 @@ export default function Main() {
             <div className="content-main" id="projects-wrapper">
               <Projects></Projects>
             </div>
-            <div className="content-main" id="tech-stacks-wrapper">
+            <div className="content-main" id="techStacks-wrapper">
               <TechStacks></TechStacks>
             </div>
           </div>
