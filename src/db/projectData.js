@@ -17,7 +17,7 @@ const projectData = [
     title: "iTutor - A learning platform (Still in progress!)",
     thumbnail:
       "https://raw.githubusercontent.com/vtranduc/iTutor/master/docs/home.png",
-    repository: "https://github.com/vtranduc/iTutor",
+    // repository: "https://github.com/vtranduc/iTutor",
     summary:
       "iTutor is an Edmonton-based business whose goal is the help the students from grade 3 to first-year university to succeed in academic career. Founded in 2011, it has grown to be one of the most successful tutor businesses in the capital of Alberta with 2 locations that run multiple classes in the evenings and weekends. While the homepage was built with Wordpress and PHP by another team led by Ashneil, our team (Me and Rahmat) is working to build the platforms for the registered users so that teachers, parents, and students can monitor the study progress, compile the questions, and submit the assignments, etc.",
     actions: [
