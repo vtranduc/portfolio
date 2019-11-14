@@ -147,7 +147,7 @@ export default function Profile() {
             id="resume-wrapper"
             onClick={() => {
               window.open(
-                "https://drive.google.com/file/d/1NT0btbd__QWtkGMMiN-pP2sQlV1Qelwy/view?usp=sharing"
+                "https://drive.google.com/file/d/1D0jFjevJj3xypU5dCyTxISBCwc7htqVX/view?usp=sharing"
               );
             }}
           >
